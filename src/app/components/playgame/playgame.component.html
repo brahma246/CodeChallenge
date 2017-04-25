@@ -44,8 +44,8 @@
 </md-card>
 </md-card>-->
 
-<div layout="row">
-  <div flex>
+<div class="cards-container">
+  <div class="cards">
     <img src="{{mycard.image}}" *ngIf="mycard" alt="photo of {{mycard.suit}}">
  <md-card-content>
   
@@ -54,7 +54,7 @@
    <h2>Dealer</h2>
 </md-card-content>
   </div>
-  <div flex *ngIf="guestCard &&(higher || lower)">
+  <div class="cards" *ngIf="guestCard &&(higher || lower)">
     <img  src="{{guestCard.image}}" alt="photo of {{guestCard.suit}}">
  <md-card-content>
    <md-icon class="icon-40">perm_identity</md-icon>
@@ -64,6 +64,8 @@
 </div>
 
 </md-sidenav-container>
+
+
 
 
 

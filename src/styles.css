@@ -17,9 +17,13 @@ h1{
 md-toolbar-row{
     justify-content: space-between;
 }
-.alertcls{
-    margin: 3px;
-    background-color: red;
+.alertcls{  
+    padding: 10px;
+    color: white;
+    width: 400px;
+    font-weight: bold;
+    margin: 10px auto;
+    background-color: green;
 }
 md-grid-list{
     max-width: 1403px;
@@ -63,4 +67,14 @@ md-sidenav {
 *{
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
+}
+
+.cards-container .cards {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.cards-container {
+    text-align: center;
+    margin-top: 25px;
 }
