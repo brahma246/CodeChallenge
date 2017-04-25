@@ -1,3 +1,23 @@
-<h1>
-  {{title}}
-</h1>
+
+<div [class.dark-theme]="isDarkTheme" style="height:500px;">
+  <md-toolbar color="primary">
+  <span>
+  <md-icon class="icon-20">star half</md-icon> Challenge App
+  </span>
+  
+ <a routerLink="/playgame"><span>
+  Play Game
+  </span></a>
+   <a routerLink="/favmovie"><span>
+  Fav Movies
+  </span></a>
+   
+
+  <button md-icon-button (click)="isDarkTheme=!isDarkTheme" md-no-ink>
+  <md-icon class="icon-40">{{ isDarkTheme ? "brightness_1" :   "panorama_fisheye"}}</md-icon>
+  </button>
+  </md-toolbar>
+  
+ <router-outlet></router-outlet>
+</div>
+

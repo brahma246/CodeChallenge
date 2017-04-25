@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+body{
+    margin:0;
+    font-family: Roboto,sans-serif;
+    overflow:hidden;
+}
+[md-raised-button]{
+    width: 100%;
+}
+h1{
+    padding-top: 0px;
+}
+md-toolbar-row{
+    justify-content: space-between;
+}
+.alertcls{
+    margin: 3px;
+    background-color: red;
+}
+md-grid-list{
+    max-width: 1403px;
+    margin: 16px;   
+}
+
+md-grid-tile-footer{
+    margin:0 14px 0 14px;
+}
+
+md-sidenav-container {
+
+height: 100vh;
+
+}
+
+.mat-card>:first-child {
+
+    text-align: center;
+}
+.mat-card>.mat-card-actions:last-child {
+
+    text-align: center
+}
+
+md-sidenav {
+    width:320px;
+}
+
+.icon-20{
+    font-size: 20px;
+}
+
+.icon-40{
+    font-size: 40px;
+}
+.mat-icon{
+    width: 18px;
+}
+
+*{
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}

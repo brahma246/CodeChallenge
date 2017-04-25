@@ -1,0 +1,49 @@
+
+
+
+ 
+<md-sidenav-container >
+
+<md-card  class="md-padding"  layout="column">
+ <md-card-content>
+   <h2>Choose Higher or Lower:</h2>
+   
+ </md-card-content>
+ <md-card-actions layout="row" layout-align="end center">
+    <button md-raised  class="primary" [disabled]="isGuessed" (click)="higher=!higher;checkHigherLower()">HIGHER</button>
+    <button md-raised class="primary" [disabled]="isGuessed"  (click)="lower=!lower;checkHigherLower()">LOWER</button>
+    <button md-raised class="primary" *ngIf="isTried" routerLink="/playgame" (click)="resetStatus()"><span>
+  TRY AGAIN
+  </span></button>
+  <div *ngIf="isTried" class="alertcls" layout-align="center">{{message}}</div>   
+ </md-card-actions>
+
+</md-card>
+
+
+
+
+<md-card  class="md-padding" layout="row">
+ <img src="{{mycard.image}}" *ngIf="mycard" alt="photo of {{mycard.suit}}">
+ <md-card-content>
+  
+    <md-icon class="icon-40">perm_identity</md-icon>
+  
+   <h2>Dealer</h2>
+</md-card-content>
+
+</md-card>
+
+<md-card *ngIf="guestCard &&(higher || lower)"  class="md-padding" layout="row">
+ <img  src="{{guestCard.image}}" alt="photo of {{guestCard.suit}}">
+ <md-card-content>
+   <md-icon class="icon-40">perm_identity</md-icon>
+   <h2>Guest User</h2>
+</md-card-content>
+
+</md-card>
+
+</md-sidenav-container>
+
+
+
