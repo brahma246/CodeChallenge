@@ -1,6 +1,6 @@
 import { Component,ViewChild } from '@angular/core';
 
-import { MoviesService } from 'app/services/movies.service';
+import { MoviesService } from 'src/app/services/movies.service';
 
 @Component({
   selector: 'fav-movie',

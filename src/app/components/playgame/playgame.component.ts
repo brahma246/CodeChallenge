@@ -1,6 +1,6 @@
 import { Component,ViewChild } from '@angular/core';
 
-import { DeckcardsService } from 'app/services/deckcards.service';
+import { DeckcardsService } from 'src/app/services/deckcards.service';
 
 
 

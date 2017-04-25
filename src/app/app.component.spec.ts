@@ -2,7 +2,7 @@
 
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { PlayGameComponent } from 'app/components/playgame/playgame.component';
+import { PlayGameComponent } from 'src/app/components/playgame/playgame.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { MaterialModule } from '@angular/material';
 

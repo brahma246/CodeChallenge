@@ -11,17 +11,18 @@
         "assets",
         "favicon.ico"
       ],
-      "index": "index.html",
+      "index": "../index.html",
       "main": "main.ts",
       "polyfills": "polyfills.ts",
       "test": "test.ts",
-      "tsconfig": "tsconfig.json",
+      "tsconfig": "../tsconfig.json",
       "prefix": "app",
       "styles": [
         "styles.css",
         "dark-theme.scss"
       ],
       "scripts": ["../node_modules/hammerjs/hammer.min.js"],
+      "environmentSource": "environments/environment.ts",
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",

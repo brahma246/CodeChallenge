@@ -22,8 +22,8 @@
 
 
 
-
-<md-card  class="md-padding" layout="row">
+<!--<md-card class="md-padding" layout="row">
+<md-card  class="md-padding" layout="column">
  <img src="{{mycard.image}}" *ngIf="mycard" alt="photo of {{mycard.suit}}">
  <md-card-content>
   
@@ -34,7 +34,7 @@
 
 </md-card>
 
-<md-card *ngIf="guestCard &&(higher || lower)"  class="md-padding" layout="row">
+<md-card *ngIf="guestCard &&(higher || lower)"  class="md-padding" layout="column">
  <img  src="{{guestCard.image}}" alt="photo of {{guestCard.suit}}">
  <md-card-content>
    <md-icon class="icon-40">perm_identity</md-icon>
@@ -42,6 +42,26 @@
 </md-card-content>
 
 </md-card>
+</md-card>-->
+
+<div layout="row">
+  <div flex>
+    <img src="{{mycard.image}}" *ngIf="mycard" alt="photo of {{mycard.suit}}">
+ <md-card-content>
+  
+    <md-icon class="icon-40">perm_identity</md-icon>
+  
+   <h2>Dealer</h2>
+</md-card-content>
+  </div>
+  <div flex *ngIf="guestCard &&(higher || lower)">
+    <img  src="{{guestCard.image}}" alt="photo of {{guestCard.suit}}">
+ <md-card-content>
+   <md-icon class="icon-40">perm_identity</md-icon>
+   <h2>Guest User</h2>
+</md-card-content>
+  </div>
+</div>
 
 </md-sidenav-container>
 
